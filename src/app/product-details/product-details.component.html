@@ -1,0 +1,15 @@
+<h2>Manager Login</h2>
+
+<form [formGroup]="submitForm" (ngSubmit)="onSubmit(submitForm.value)">
+  <div>
+      <label>Username</label>
+      <input type="text" formControlName="username">
+  </div>
+
+  <div>
+      <label>Password</label>
+      <input type="text" formControlName="Password">
+  </div>
+  <div>
+      <button (click)="submit.emit()" class="button" type="submit">Login</button>
+  </div>

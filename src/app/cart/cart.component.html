@@ -1,0 +1,39 @@
+<h3>Resume</h3>
+
+<form [formGroup]="submitForm" (ngSubmit)="onSubmit(submitForm.value)">
+  <div>
+    <label>First Name</label>
+    <input type="text" formControlName="firstname">
+  </div>
+ 
+  <div>
+    <label>Last Name</label>
+    <input type="text" formControlName="lastname">
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="text" formControlName="email">
+  </div>
+  <div>
+    <label>Position</label>
+    <select>
+      <option value="programmer">Programmer</option>
+      <option value="sotwaredeveloper">Software Developer</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+  <br>
+  <br>
+  <div>
+    <input type="file" id="myFile">
+  </div>
+  <br> 
+  <div>
+    <button (click)="submit.emit()" class="button" type="submit">Submit!</button>
+  </div>
+
+
+  
+
+</form>

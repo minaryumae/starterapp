@@ -1,0 +1,12 @@
+<p *ngIf="product.price > 700">
+  <button (click)="notify.emit()">Notify Me</button>
+</p>
+  <br> 
+<div>
+  <button (click)="share()">
+    Share
+  </button>
+  <app-product-alerts
+  (submit)="onSubmit()">>
+  </app-product-alerts> 
+</div>
